@@ -1,10 +1,11 @@
 import React from "react";
+import "./Header.scss";
 
 function Header() {
   return (
-    <div>
+    <header className="header">
       <a href="#home" className="logo">
-        Huy<span>TDN</span>
+        Huy <span>TDN</span>
       </a>
       <i className="bx bx-menu" id="menu-icon"></i>
       <nav className="navbar">
@@ -15,7 +16,7 @@ function Header() {
         <a href="#contact">Contact</a>
       </nav>
       <button className="gradient-btn">Contact Me</button>
-    </div>
+    </header>
   );
 }
 
