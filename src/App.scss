@@ -55,3 +55,13 @@ section {
   font-size: 7rem;
   margin: 0.5rem 0 2rem;
 }
+
+span {
+  background: linear-gradient(
+    270deg,
+    rgb(87, 241, 255) 10%,
+    rgb(9, 88, 206) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}

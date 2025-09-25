@@ -1,0 +1,36 @@
+.contact {
+  background-color: var(--bg-color);
+
+  h2 {
+    margin-bottom: 3rem;
+    color: var(--text-color);
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+
+    .input-group-2 textarea,
+    .input-box input {
+      width: 100%;
+      padding: 2rem;
+      font-size: 1.8rem;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      border-radius: 2rem;
+      border: 2px solid var(--main-color);
+      margin: 1.5rem 0;
+      resize: none;
+    }
+  }
+}
+
+@media (max-width: 1285px) {
+  .contact form {
+    flex-direction: column;
+  }
+}

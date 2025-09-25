@@ -15,6 +15,7 @@
 #menu-icon {
   font-size: 3.5rem;
   color: var(--main-color);
+  cursor: pointer;
   display: none;
 }
 
@@ -27,16 +28,6 @@
 
   &:hover {
     transform: scale(1.1);
-  }
-
-  span {
-    background: linear-gradient(
-      270deg,
-      rgb(87, 241, 255) 10%,
-      rgb(9, 88, 206) 100%
-    );
-    background-clip: text;
-    color: transparent;
   }
 }
 
@@ -73,5 +64,38 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1285px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 15%;
+    width: fit-content;
+    min-width: 150px;
+    max-width: 250px;
+    padding: 1rem 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    border: 2px solid var(--main-color);
+    display: none;
+
+    a {
+      display: block;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      color: var(--text-color);
+    }
+  }
+  .active {
+    display: block;
+  }
+  .gradient-btn {
+    display: none;
   }
 }

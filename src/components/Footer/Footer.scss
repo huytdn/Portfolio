@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--second-bg-color);
+  padding: 50px 0;
+  .social-icons {
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    font-size: 1.8rem;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+        color: white;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: var(--main-color);
+          border-bottom: 3px solid var(--main-color);
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+}
